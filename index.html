@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Counter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <h1>NOZAMA WORDSNAP</h1>
+        <p class="subtitle">
+            👉 "Write here, for this is the very place where you can correct your mistakes."
+        </p>
+        <div class="timer-section">
+            <div class="timer-display">
+                <span id="minutes">00</span>:<span id="seconds">00</span>
+            </div>
+            <div class="timer-controls">
+                <button id="startBtn" class="timer-btn start">Start</button>
+                <button id="stopBtn" class="timer-btn stop" disabled>Stop</button>
+                <button id="resetBtn" class="timer-btn reset">Reset</button>
+            </div>
+        </div>
+        <textarea id="textInput" placeholder="Start typing here..." disabled></textarea>
+        <div class="counters">
+            <div class="counter-box">
+                <span class="counter-label">Characters</span>
+                <span id="characterCount" class="counter-value">0</span>
+            </div>
+            <div class="counter-box">
+                <span class="counter-label">Words</span>
+                <span id="wordCount" class="counter-value">0</span>
+            </div>
+            <div class="counter-box">
+                <span class="counter-label">Sentences</span>
+                <span id="sentenceCount" class="counter-value">0</span>
+            </div>
+        </div>
+        <div class="results" id="results">
+            <h3>Session Results</h3>
+            <p>Words per minute: <span id="wpm">0</span></p>
+            <p>Time spent: <span id="timeSpent">00:00</span></p>
+            <p>Words typed: <span id="finalWordCount">0</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

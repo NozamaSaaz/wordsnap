@@ -1,0 +1,136 @@
+/* "NOZAMA WORD COUNTER CSS CODE" */
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Set a smooth and modern font */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #6fa9d3, #283135);
+    color: #1a1313;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .timer-controls { 
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(13, 71, 161, 0.15);
+  }
+  .timer-controls {
+    display: flex;
+    font: bold;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+.timer-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+.timer-btn.start {
+    background: linear-gradient(135deg, #4CAF50, #81C784);
+}
+.timer-btn.stop {
+    background: linear-gradient(135deg, hsl(4, 100%, 50%), #e57373);
+}
+.timer-btn.reset {
+    background: linear-gradient(135deg, #2196F3, #64B5F6);
+}
+.timer-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.timer-btn:hover:not(:disabled) {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+  /* Main container */
+  .container {
+    background-color: rgb(160, 181, 184);
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Heading */
+  .container h1 {
+    font-size: 2.5rem;
+    color: #325c9b;
+    margin-bottom: 10px;
+  }
+  
+  /* Subtitle */
+  .subtitle {
+    font-size: 1rem;
+    color: #131011;
+    margin-bottom: 25px;
+  }
+  
+  /* Textarea styling */
+  textarea {
+    width: 100%;
+    height: 180px;
+    padding: 15px;
+    font-size: 1rem;
+    border: 2px solid #90caf9;
+    border-radius: 10px;
+    resize: none;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  textarea:focus {
+    border-color: #0d47a1;
+  }
+  
+  /* Counters section */
+  .counters {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    gap: 30px;
+    flex-wrap: wrap;
+  } 
+  /* Individual counter box */
+  .counter-box {
+    flex: 1;
+    min-width: 120px;
+    background-color: #e3f2fd;
+    padding: 20px 15px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .counter-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(13, 71, 161, 0.15);
+  }
+  /* Labels and values */
+  .counter-label {
+    display: block;
+    font-size: 0.95rem;
+    color: #272525;
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+  .counter-value {
+    font-size: 1.6rem;
+    color: #136bee;
+    font-weight: 600;
+  }
